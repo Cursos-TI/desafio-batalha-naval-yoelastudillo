@@ -9,8 +9,8 @@ int main() {
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     int tabuleiro[10][10] = {0};
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    int navio1[4]={2, 4, 2, 6};
-    int navio2[4]={3, 2, 5, 2};
+    int navio1[2][2]={{2, 4},{2, 6}};
+    int navio2[2][2]={{3, 2},{5, 2}};
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
     for (int i = 0; i < 10; i++) //filas
     {
