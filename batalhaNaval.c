@@ -18,7 +18,7 @@ int main() {
     {
         for (int i =0 ; i < 10; i++) //columnas
         {
-            i == navio1[0][0] ? printf("si ") : printf("no "); 
+            i == navio1[0][0] ? printf("3 ") : printf("0 "); 
             //printf("%d", i);
         }
         printf("\n");
