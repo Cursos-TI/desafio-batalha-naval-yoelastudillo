@@ -12,13 +12,14 @@ int main() {
     int navio1[2][2]={{2, 4},{2, 6}};
     int navio2[2][2]={{3, 2},{5, 2}};
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
+    
+    //impresion navios
     for (int i = 0; i < 10; i++) //filas
     {
-        i = navio1[0] ? valor_si_verdadero : valor_si_falso;
         for (int i =0 ; i < 10; i++) //columnas
         {
-
-            printf("0 ");            
+            i == navio1[0][0] ? printf("si ") : printf("no "); 
+            //printf("%d", i);
         }
         printf("\n");
     }
