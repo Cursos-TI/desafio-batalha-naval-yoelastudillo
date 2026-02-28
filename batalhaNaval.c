@@ -8,18 +8,41 @@ int main() {
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     int tabuleiro[10][10] = {0};
+
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    int navio1[2][2]={{2, 4},{2, 6}};
-    int navio2[2][2]={{3, 2},{5, 2}};
+    int navio1[3][2] = {{2,4},{2,5},{2,6}}; // horizontal
+    int navio2[3][2] = {{3,2},{4,2},{5,2}}; // vertical
+
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
     
+    // Posicionando navio1 no tabuleiro
+    for (int i = 0; i < 3; i++) {
+        tabuleiro[navio1[i][0]][navio1[i][1]] = 3;
+    }
+
+    // Posicionando navio2 no tabuleiro
+    for (int i = 0; i < 3; i++) {
+        tabuleiro[navio2[i][0]][navio2[i][1]] = 3;
+    }
+
     //impresion navios
+    printf("Coordenadas Navio 1:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("(%d,%d)\n", navio1[i][0], navio1[i][1]);
+    }
+
+    printf("Coordenadas Navio 2:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("(%d,%d)\n", navio2[i][0], navio2[i][1]);
+    }
+
+    printf("\nTabuleiro:\n");
+
     for (int i = 0; i < 10; i++) //filas
     {
-        for (int i =0 ; i < 10; i++) //columnas
+        for (int j = 0 ; j < 10; j++) //columnas
         {
-            i == navio1[0][0] ? printf("3 ") : printf("0 "); 
-            //printf("%d", i);
+            printf("%d ", tabuleiro[i][j]); 
         }
         printf("\n");
     }
